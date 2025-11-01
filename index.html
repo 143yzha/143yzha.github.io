@@ -1,0 +1,894 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laryzha Mhey Yap | Personal Website</title>
+  <style>
+    * .home-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.home-section p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0 auto 15px auto;
+  max-width: 600px;
+}
+
+.home-section img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/*  Floating Hearts Animation */
+.floating-hearts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.floating-hearts span {
+  position: relative;
+  font-size: 1.8rem;
+  animation: floatUp 4s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.floating-hearts span:nth-child(1) {
+  animation-delay: 0s;
+  color: #ffb6c1;
+}
+.floating-hearts span:nth-child(2) {
+  animation-delay: 0.8s;
+  color: #ff69b4;
+}
+.floating-hearts span:nth-child(3) {
+  animation-delay: 1.6s;
+  color: #ff1493;
+}
+.floating-hearts span:nth-child(4) {
+  animation-delay: 2.4s;
+  color: #ff85a1;
+}
+.floating-hearts span:nth-child(5) {
+  animation-delay: 3.2s;
+  color: #f8a8d4;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-60px) scale(1);
+    opacity: 0;
+  }
+}
+
+
+/*  Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+* {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #ffe6f2 0%, #fff0f6 50%, #ffe6f9 100%);
+  color: #3d2b30;
+  margin: 0;
+}
+
+/*  Header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("c:/Users/Laryzha Mhey/Downloads/download (14).jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-bottom: 4px solid #f8a8d4;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 192, 203, 0.25); /* soft pink overlay */
+}
+
+.header h1,
+.header p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+/*  Navigation Bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ffccde;
+  text-align: center;
+  border-bottom: 3px solid #f3a6cb;
+}
+
+.topnav a {
+  display: inline-block;
+  color: #3d2b30;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #f8a8d4;
+  color: white;
+  border-radius: 8px;
+}
+
+/*  Home Section */
+.home-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.home-section h2 {
+  font-size: 1.9rem;
+  color: #d94e8f;
+}
+
+.home-section p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 15px;
+  line-height: 1.6;
+  color: #4b3a42;
+}
+
+.home-section img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+}
+
+/*  Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  Section Styles */
+section {
+  background-color: rgba(255, 240, 245, 0.6);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 85%;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+}
+
+    /* Main content */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .main {
+      flex: 100%;
+      padding: 20px;
+      background-color: #f7f9fc;
+      border-radius: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      display: block;
+      margin: 10px 0;
+    }
+    
+    .recipe-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.recipe-item {
+  text-align: center;
+  width: 250px;
+}
+
+.recipe-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+    div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+    }
+/* 💕 Floating Hearts Animation */
+.floating-hearts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.floating-hearts span {
+  position: relative;
+  font-size: 1.8rem;
+  animation: floatUp 4s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.floating-hearts span:nth-child(1) {
+  animation-delay: 0s;
+  color: #ffb6c1;
+}
+.floating-hearts span:nth-child(2) {
+  animation-delay: 0.8s;
+  color: #ff69b4;
+}
+.floating-hearts span:nth-child(3) {
+  animation-delay: 1.6s;
+  color: #ff1493;
+}
+.floating-hearts span:nth-child(4) {
+  animation-delay: 2.4s;
+  color: #ff85a1;
+}
+.floating-hearts span:nth-child(5) {
+  animation-delay: 3.2s;
+  color: #f8a8d4;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-60px) scale(1);
+    opacity: 0;
+  }
+}
+
+    /* Footer */
+    .footer {
+      background-color: #e982db;
+      background-image: url("background.jpg");
+      text-align: center;
+      padding: 20px;
+      color: rgba(0, 0, 0, 0.7);
+      margin-top: 20px;
+    }
+
+ .about-item, .collection-gallery > div {
+  background-color: #ffeaf5;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px rgba(255, 182, 193, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.about-item:hover, .collection-gallery > div:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+
+.about-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+.about-label {
+  font-weight: bold;
+  color: #d94e8f;
+  background-color: #fff0f6;
+  padding: 6px 12px;
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+    /* Responsive layout */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+      .topnav a {
+        display: block;
+        padding: 10px;
+      }
+    }
+
+
+  </style>
+</head>
+
+<script>
+  const form = document.getElementById('commentForm');
+  const input = document.getElementById('commentInput');
+  const commentList = document.getElementById('commentList');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const commentText = input.value.trim();
+    if (commentText !== "") {
+      const li = document.createElement('li');
+      li.textContent = commentText;
+      li.style.background = "#fff";
+      li.style.padding = "8px";
+      li.style.marginTop = "5px";
+      li.style.borderRadius = "5px";
+      li.style.boxShadow = "0 2px 4px rgba(0,0,0,0.1)";
+      commentList.appendChild(li);
+      input.value = "";
+    }
+  });
+</script>
+
+<body>
+
+<div class="header">
+  <img src="c:\Users\Laryzha Mhey\Downloads\download (14).jpg" alt="cute bg" class="header-img">
+  <h1>~Meimei~</h1>
+  <p> ~~~ | ~~~  </p>
+</div>
+
+
+  <div class="topnav">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#cookings">COOKINGS</a>
+    <a href="#work">WORKS</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+
+  <section id="home" class="home-section fade-in">
+  <h2>This is <span style="color:#e982db;">MINI MEIMEI</span> </h2>
+  <p>
+    She loves eating <strong>spaghetti</strong> when she was younger —<br>
+    <em>Click "<a href="#about" style="color:#e982db; text-decoration:none; font-weight:bold;">About</a>" to know me more!</em>
+  </p>
+  <img src="c:\Users\Laryzha Mhey\Downloads\e96357c1-895a-4c47-b909-e954525bb84d.jpg" alt="Baby Meimei" <!-- 💕 Floating Hearts Animation -->
+<div class="floating-hearts">
+  <span>💗</span>
+  <span>💖</span>
+  <span>💞</span>
+  <span>💕</span>
+  <span>💓</span>
+</div>
+
+
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi, I'm <strong>Laryzha Mhey Yap</strong>. I love expressing myself through dancing, scrapbooking, and cooking. I’m always eager to learn new things and grow. I often cook for my family, I also have some fears im scared at, my top 1 on the list is gotta be my Fear of Deep Ocean (Thalassophobia) BUT I LOOOVE SWIMMING not in the ocean tho..., my 2nd one is Fear of Clowns (Coulrophobia), my 3rd one is gotta be Fear of the Dark (Nyctophobia). I’m told I look like Meimei or Abby from <em>Turning Red</em> — see for yourself!</p>
+
+  <div class="about-gallery">
+    <div class="about-gallery" style="
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+">
+  <div class="about-item" style="text-align:center;">
+    <p class="about-label">Meimei</p>
+    <img src="c:\Users\Laryzha Mhey\Downloads\3a4c33ee-fbe4-4fa7-9541-438430aae872.jpg" alt="Meimei" style="width:200px; border-radius:15px;" <!-- 💕 Floating Hearts Animation -->
+<div class="floating-hearts">
+  <span>💗</span>
+  <span>💖</span>
+  <span>💞</span>
+  <span>💕</span>
+  <span>💓</span>
+</div>
+  </div>
+
+  <div class="about-item" style="text-align:center;">
+    <p class="about-label">Abby</p>
+    <img src="c:\Users\Laryzha Mhey\Downloads\7743bac7-cfbb-4386-bf3b-1fa9fd0b5449.jpg" alt="Abby" style="width:200px; border-radius:15px;" <!-- 💕 Floating Hearts Animation -->
+<div class="floating-hearts">
+  <span>💗</span>
+  <span>💖</span>
+  <span>💞</span>
+  <span>💕</span>
+  <span>💓</span>
+</div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+<h3 style="color:#d14b8f; text-align:center;"> Comments:</h3>
+
+<div id="commentContainer" style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+
+  <form id="commentForm" style="max-width:500px; width:100%; text-align:center;">
+    <label for="comment" style="font-weight:bold; color:#d94e8f;">Type Here:</label><br>
+    <input type="text" id="commentInput" name="comment" placeholder="Write something cute..." 
+      style="width:90%;padding:10px;border-radius:8px;border:1px solid #ccc;margin-top:8px;" required>
+    <br><br>
+    <input type="submit" value="Submit" 
+      style="background-color:#e982db;color:white;padding:10px 25px;border:none;border-radius:8px;cursor:pointer;font-weight:bold;transition:0.3s;">
+  </form>
+
+  <div id="commentSection" 
+    style="margin-top:20px; background-color:#ffe6f3; padding:15px; border-radius:15px; width:80%; max-width:500px; text-align:left; box-shadow:0 3px 8px rgba(0,0,0,0.1);">
+    <ul id="commentList" style="list-style-type:none; padding-left:0; margin:0;"></ul>
+   <section id="collection" style="text-align:center; margin-top:60px;">
+  <h2 style="
+    font-family:'Poppins',sans-serif;
+    color:#d14b8f;
+    font-size:2rem;
+    background-color:#ffeaf5;
+    display:inline-block;
+    padding:10px 25px;
+    border-radius:20px;
+    box-shadow:0 3px 8px rgba(255,105,180,0.2);
+  ">
+      My Weird Collection 
+  </h2>
+
+  <p style="color:#4b3a42; max-width:600px; margin:10px auto 40px; font-size:1.1rem;">
+    These are some of my odd little collections that make me smile, cute, random, and totally me! 
+  </p>
+
+  <div class="collection-gallery" style="
+    display:flex;
+    justify-content:flex-start;
+    align-items:stretch;
+    gap:30px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-behavior:smooth;
+    padding:20px;
+    margin:0 auto;
+    max-width:90%;
+    scrollbar-width:thin;           /* Firefox */
+  ">
+
+    <style>
+      /* Works for Chrome, Edge, Safari */
+      .collection-gallery::-webkit-scrollbar {
+        height: 8px;
+      }
+      .collection-gallery::-webkit-scrollbar-thumb {
+        background-color: #d94e8f;
+        border-radius: 10px;
+      }
+      .collection-gallery::-webkit-scrollbar-track {
+        background-color: #ffeaf5;
+      }
+      .collection-gallery > div:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      }
+    </style>
+
+    <!-- Box 1 -->
+    <div style="
+      background-color:#ffeaf5;
+      border-radius:15px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      width:250px;
+      flex-shrink:0;
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    ">
+      <img src="c:\Users\Laryzha Mhey\Downloads\ccc5fd49-f6a2-413a-b794-405dec80d132.jpg" alt="Smiskis"
+        style="width:100%; height:160px; object-fit:cover; border-top-left-radius:15px; border-top-right-radius:15px;">
+      <div style="padding:10px;">
+        <h4 style="color:#d94e8f;">Smiskis (Figurines)</h4>
+        <p style="font-size:0.95rem; color:#4b3a42;">I love collecting smikis i think i have way too many of these in my room, i use them for decorations.</p>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div style="
+      background-color:#ffeaf5;
+      border-radius:15px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      width:250px;
+      flex-shrink:0;
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    ">
+      <img src="c:\Users\Laryzha Mhey\Downloads\9da8f728-aa86-435f-aaf9-2929a331623f.jpg" alt="Can Tabs"
+        style="width:100%; height:160px; object-fit:cover; border-top-left-radius:15px; border-top-right-radius:15px;">
+      <div style="padding:10px;">
+        <h4 style="color:#d94e8f;">Can Tabs</h4>
+        <p style="font-size:0.95rem; color:#4b3a42;">I don't even know why i actually collect these but i think to see how many sodas I drink in a year.. </p>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div style="
+      background-color:#ffeaf5;
+      border-radius:15px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      width:250px;
+      flex-shrink:0;
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    ">
+      <img src="c:\Users\Laryzha Mhey\Downloads\424a84f6-5ced-466d-9d54-b473c7d3f19d.jpg" alt="Keychains"
+        style="width:100%; height:160px; object-fit:cover; border-top-left-radius:15px; border-top-right-radius:15px;">
+      <div style="padding:10px;">
+        <h4 style="color:#d94e8f;">Keychains</h4>
+        <p style="font-size:0.95rem; color:#4b3a42;">I hang them in my pants or backpack for styling, I use them as decor. </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+
+</div>
+
+
+  </div>
+  </div>
+</section>
+
+
+   <section id="cookings">
+  <h2>My Top 3 Favorite Recipes</h2>
+  <div class="recipe-gallery">
+    <div class="recipe-item">
+      <img src="c:\Users\Laryzha Mhey\Downloads\e6f3b207-e371-440a-a44e-eb35baa97cdf.jpg" alt="Creamy Mushroom Soup">
+      <p><strong>Creamy Mushroom Soup</strong><br>My go-to dish that I often cook with my mom.</p>
+    </div>
+
+    <div class="recipe-item">
+      <img src="c:\Users\Laryzha Mhey\Downloads\54484324-cc65-40b0-8ec0-fcd638f84de4.jpg" alt="Buttered Shrimp">
+      <p><strong>Buttered Shrimp</strong><br>A favorite recipe I learned from my dad, our bonding dish.</p>
+    </div>
+
+    <div class="recipe-item">
+      <img src="c:\Users\Laryzha Mhey\Downloads\9edc0797-8f63-4f15-ab5e-6fb9e270bba0.jpg" alt="Lasagna">
+      <p><strong>Lasagna</strong><br>The hardest but most rewarding recipe, taught by my lola!</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="work" style="text-align:center; margin-top:50px;">
+  <h2 style="
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #d14b8f;
+    background-color: #ffeaf5;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(255, 105, 180, 0.2);
+  ">
+     My Performance Tasks 
+  </h2>
+
+  <div class="gallery-container" style="
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  ">
+
+    <!-- Box 1 -->
+    <div class="gallery-item" style="
+      background-color: #ffeaf5;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    ">
+      <a target="_blank" href="#">
+        <img src="c:\Users\Laryzha Mhey\OneDrive\Pictures\Screenshots\Screenshot 2025-10-21 011929.png" alt="Pt1" style="width:100%; height:140px; object-fit:cover;">
+      </a>
+      <div class="desc" style="padding:10px; font-weight:bold; color:#d14b8f;">Performance Task 1</div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="gallery-item" style="
+      background-color: #ffeaf5;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    ">
+      <a target="_blank" href="#">
+        <img src="c:\Users\Laryzha Mhey\OneDrive\Pictures\Screenshots\Screenshot 2025-10-21 021028.png" alt="Pt2" style="width:100%; height:140px; object-fit:cover;">
+      </a>
+      <div class="desc" style="padding:10px; font-weight:bold; color:#d14b8f;">Performance Task 2</div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="gallery-item" style="
+      background-color: #ffeaf5;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    ">
+      <a target="_blank" href="#">
+        <img src="c:\Users\Laryzha Mhey\OneDrive\Pictures\Screenshots\Screenshot 2025-10-21 021131.png" alt="Pt3" style="width:100%; height:140px; object-fit:cover;">
+      </a>
+      <div class="desc" style="padding:10px; font-weight:bold; color:#d14b8f;">Performance Task 3</div>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="gallery-item" style="
+      background-color: #ffeaf5;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    ">
+      <a target="_blank" href="#">
+        <img src="c:\Users\Laryzha Mhey\OneDrive\Pictures\Screenshots\Screenshot 2025-10-21 021259.png" alt="Pt4" style="width:100%; height:140px; object-fit:cover;">
+      </a>
+      <div class="desc" style="padding:10px; font-weight:bold; color:#d14b8f;">Performance Task 4</div>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="gallery-item" style="
+      background-color: #ffeaf5;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    ">
+      <a target="_blank" href="#">
+        <img src="c:\Users\Laryzha Mhey\OneDrive\Pictures\Screenshots\Screenshot 2025-10-21 021441.png" alt="Pt5" style="width:100%; height:140px; object-fit:cover;">
+      </a>
+      <div class="desc" style="padding:10px; font-weight:bold; color:#d14b8f;">Performance Task 5</div>
+    </div>
+    <section id="gallery" style="text-align:center; margin-top:60px;">
+  <h2 style="
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:2rem;
+    color:#d14b8f;
+    background-color:#ffeaf5;
+    display:inline-block;
+    padding:10px 25px;
+    border-radius:20px;
+    box-shadow:0 3px 8px rgba(255,105,180,0.2);
+  ">
+     My Pink Gallery 
+  </h2>
+
+  <p style="color:#4b3a42; max-width:600px; margin:10px auto 40px; font-size:1.1rem;">
+    A little peek into my pink world — photos, moments, and things I love! 
+  </p>
+
+  <div class="gallery-scroll">
+    <!--  10 Image Boxes -->
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\70c605d8-38e6-4b83-a2a5-4793bb6aa863.jpg" alt="Gallery Pic 1">
+    </div>
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\b0a446c5-8aac-403d-ab4f-b3786b7fff0d.jpg" alt="Gallery Pic 2" <!--  Floating Hearts + Sparkles -->
+<div class="floating-cute">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    </div>
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\6d32610e-f732-4a26-972e-6fa9db835d9c.jpg" alt="Gallery Pic 3">
+    </div>
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\d2bc5fc9-4532-413f-9d5b-12fe779c47a5.jpg" alt="Gallery Pic 4" <!--  Floating Hearts Animation -->
+<div class="floating-hearts">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    </div>
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\af6f4ab2-da37-4652-9c57-65cd13a970ce.jpg" alt="Gallery Pic 5">
+    </div>
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\b5ec7a19-ae23-426b-b419-38ce566377f3.jpg" alt="Gallery Pic 6">
+    </div>
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\2acd5e45-c186-4ab6-b2a4-1b7d4a6cf98c.jpg" alt="Gallery Pic 7" <!--  Floating Hearts + Sparkles -->
+<div class="floating-cute">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    </div>
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\4db05e81-edf5-4744-b0f2-064d112ff619.jpg" alt="Gallery Pic 8">
+    </div>
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\b7322338-560a-4d20-afef-1602c002c1ff.jpg" alt="Gallery Pic 9">
+    </div>
+    <div class="pink-box">
+      <img src="c:\Users\Laryzha Mhey\Downloads\95bb207a-9208-4dd8-88a8-7ca682317f3c.jpg" alt="Gallery Pic 10">
+    </div>
+  </div>
+
+  <style>
+    .gallery-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+      width: 90%;
+      margin: 0 auto;
+      background: #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+      scroll-behavior: smooth;
+    }
+
+    /* scrollbar */
+    .gallery-scroll::-webkit-scrollbar {
+      height: 10px;
+    }
+    .gallery-scroll::-webkit-scrollbar-thumb {
+      background-color: #ff99cc;
+      border-radius: 10px;
+    }
+
+    /* boxes */
+    .pink-box {
+      flex: 0 0 auto;
+      width: 250px;
+      height: 200px;
+      background-color: #ffb6c1;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .pink-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(255, 105, 180, 0.4);
+    }
+
+    .pink-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    .pink-box img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</section>
+
+
+  </div>
+</section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Want to reach out? (No private chef jobs yet )</p>
+        <p> 0951-223-5550<br>
+         <a href="mailto:mheyyapp@gmail.com">mheyyapp@gmail.com</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/mhey.yap.54">Mhey Yap</a><br>
+        TikTok: <a href="https://www.tiktok.com/@lxr.yzha">@lxr.yzha</a></p>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Laryzha Mhey Yap. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
